@@ -1,27 +1,27 @@
 [Unit]
-Description=Sub2API - AI API Gateway Platform
-Documentation=https://github.com/Wei-Shaw/sub2api
+Description=TotCat - AI API Gateway Platform
+Documentation=https://github.com/Nek0Neko/totcat-ai
 After=network.target postgresql.service redis.service
 Wants=postgresql.service redis.service
 
 [Service]
 Type=simple
-User=sub2api
-Group=sub2api
-WorkingDirectory=/opt/sub2api
-ExecStart=/opt/sub2api/sub2api
+User=totcat
+Group=totcat
+WorkingDirectory=/opt/totcat
+ExecStart=/opt/totcat/totcat
 Restart=always
 RestartSec=5
 StandardOutput=journal
 StandardError=journal
-SyslogIdentifier=sub2api
+SyslogIdentifier=totcat
 
 # Security hardening
 NoNewPrivileges=true
 ProtectSystem=strict
 ProtectHome=true
 PrivateTmp=true
-ReadWritePaths=/opt/sub2api
+ReadWritePaths=/opt/totcat
 
 # Environment - Server configuration
 # Modify these values to change listen address and port
