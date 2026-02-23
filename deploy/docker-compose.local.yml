@@ -24,7 +24,7 @@ services:
   # TotCat Application
   # ===========================================================================
   totcat:
-    image: totcat-ai:latest
+    image: xinyu660/totcat-ai:latest
     container_name: totcat
     restart: unless-stopped
     ulimits:
