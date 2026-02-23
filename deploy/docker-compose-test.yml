@@ -17,7 +17,7 @@ services:
   # TotCat Application
   # ===========================================================================
   totcat:
-    image: totcat-ai:latest
+    image: xinyu660/totcat-ai:latest
     build:
       context: ..
       dockerfile: Dockerfile
